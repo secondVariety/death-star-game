@@ -90,10 +90,22 @@
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("// Set up board\ndocument.querySelector('body').style.backgroundColor = 'black';\n\n// Create Element\nconst createElem = (elem, name) => {\n    const create = () => {\n        let e = document.createElement(elem);\n        e.classList.add(name);\n        document.querySelector('body').insertAdjacentElement('afterbegin', e);\n    };\n    return create;\n};\n\n// Death Star\nconst deathStar = createElem('div', 'death-star');\ndeathStar();\n\n// Alderaan\nconst alderaan = createElem('div', 'alderaan');\nalderaan();\n\n//# sourceURL=webpack:///./src/js/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _less_styles_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../less/styles.less */ \"./src/less/styles.less\");\n/* harmony import */ var _less_styles_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_less_styles_less__WEBPACK_IMPORTED_MODULE_0__);\n// Styles\n\n\n// Set up board\ndocument.querySelector('body').style.backgroundColor = 'black';\n\n// Title\ndocument.querySelector('body').insertAdjacentHTML('afterbegin', '<h1>Star Wars Planets - <em>Guessing Game</em></h1>');\n\n// Create Element\nconst createElem = (elem, name) => {\n    const create = () => {\n        let e = document.createElement(elem);\n        e.id = name;\n        document.querySelector('body').insertAdjacentElement('beforeend', e);\n    };\n    return create;\n};\n\n// Death Star\nconst deathStar = createElem('div', 'death-star');\ndeathStar();\n\n// Alderaan\nconst alderaan = createElem('div', 'alderaan');\nalderaan();\n\n// Words\nlet wordArr = ['Hoth', 'Naboo', 'Coruscant', 'Alderaan', 'Tatooine', 'Bespin'];\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/less/styles.less":
+/*!******************************!*\
+  !*** ./src/less/styles.less ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/less/styles.less?");
 
 /***/ })
 
