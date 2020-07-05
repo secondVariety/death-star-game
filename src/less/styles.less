@@ -12,7 +12,7 @@ body {
 h1 {
     color: yellow;
     font-size: 4vw;
-    margin-bottom: 4rem;
+    margin-bottom: 0;
     text-align: center;
     text-transform: uppercase;
     width: 100%;
@@ -29,26 +29,26 @@ h1 {
     background: #1F618D;
     border-radius: 100%;
     display: flex;
-    height: 10vw;
+    height: 5vw;
     margin-left: auto;
     justify-content: center;
     position: relative;
-    width: 10vw;
+    width: 5vw;
     &:before {
         background: #229954;
         border-radius: 50%;
         content: '';
-        height: 3.5vw;
-        transform: translate(5vw, -2.5vw) rotate(-30deg);
-        width: 2.5vw;
+        height: 1.75vw;
+        transform: translate(2.5vw, -1.25vw) rotate(-30deg);
+        width: 1.25vw;
     }
     &:after {
         background: #229954;
         border-radius: 50%;
         content: '';
-        height: 6vw;
-        transform: translate(-3vw, 1.5vw) rotate(-18deg);
-        width: 5vw;
+        height: 3vw;
+        transform: translate(-1.5vw, 0.75vw) rotate(-18deg);
+        width: 2.5vw;
     }
 }
 
@@ -57,27 +57,145 @@ h1 {
     background: grey;
     border-radius: 100%;
     display: flex;
-    height: 50vw;
+    height: 25vw;
     justify-content: center;
     position: relative;
-    width: 50vw;
+    top: 3vw;
+    width: 25vw;
     &:before {
         background: lightgrey;
         border-radius: 100%;
         content: '';
-        height: 14.5vw;
+        height: 7.25vw;
         opacity: .25;
-        transform: translate(10vw, -8vw);
-        width: 14.5vw;
+        transform: translate(5vw, -4vw);
+        width: 7.25vw;
     }
     &:after {
         background: black;
         content: '';
-        height: .5vw;
+        height: .25vw;
         left: 0;
         opacity: .5;
         position: absolute;
         right: 0;
         top: 55%;
     }
+    .laser {
+        background: green;
+        display: none;
+        height: .2vw;
+        position: absolute;
+        width: 100%;
+    }
+    #laser-0 {
+        left: 70%;
+        top: 30%;
+        transform: rotate(20deg);
+        width: 25%;
+    }
+    #laser-1 {
+        bottom: 60%;
+        left: 70%;
+        transform: rotate(-20deg);
+        width: 25%;
+    }
+    #laser-2 {
+        bottom: 65%;
+        left: 65%;
+        width: 30%;
+    }
+    #laser-3 {
+        bottom: 65%;
+        right: -22vw;
+        width: 25vw;
+    }
+    #laser-4 {
+        bottom: 65%;
+        right: -44vw;
+        width: 25vw;
+    }
+    #laser-5 {
+        bottom: 65%;
+        right: -70vw;
+        width: 30vw;
+    }
+}
+
+// Board
+h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.75vw;
+    line-height: 2;
+    width: 100%;
+    em {
+        display: block;
+        font-size: 80%;
+    }
+}
+#main {
+    text-align: center;
+    top: -2vw;
+    position: relative;
+    width: 100%;
+    input {
+        background: white;
+        border: 1px solid grey;
+        display: inline-block;
+        font-size: 1.5vw;
+        max-width: 1.5vw;
+        padding: 1vw;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+// Message
+.message {
+    background: lightgrey;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5vw;
+    left: 50%;
+    margin-left: -22vw;
+    margin-top: -3vw;
+    padding: 3vw 2vw;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    z-index: 1;
+    width: 40vw;
+    &:after {
+        border-bottom: 1px solid black;
+        content: 'X';
+        font-family: sans-serif;
+        font-size: 1vw;
+        font-weight: bold;
+        left: 0;
+        padding: .5vw 1vw;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 0;
+    }
+}
+.lightbox-bg {
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+// Footer
+#footer {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1vw;
+    padding: 2vw;
+    text-align: right;
+    width: 100%;
 }
